@@ -39,3 +39,11 @@ $git remote -v
 this command shows the name of the URLS of remote reporisitories, along with the information of push and fetch (pull) URLs.
 
 $git push origin main
+
+TOKENS: 
+To push the file on GitHub, Password authentication do not work now. For this, we need to access personal TOKENS
+GitHub Profile -> Settings -> Developer Settings -> Personal Access Tokens -> Tokens (Classic) -> Generate New Token -> Classic
+Copy token url and paste in this command:
+$git remote set-url origin https://<token>@github.com/<username>/</repo>
+and then use the same push command
+$git push origin main

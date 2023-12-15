@@ -1,0 +1,41 @@
+GIT: SCM (Source Code Manager). It is a Version Control Sysem which keeps the track of everything happened in a folder. It maintains the history of the folder, like what commit was made, when commit was made and who made the commit.
+
+GitHub: It is a code host, as in real, host invites the guests, similarly, GitHub waits for the code (guest) to arrive and it stores the code. 
+
+Git and GitHub are purely different.
+
+COMMANDS:
+1. Everytime you install VS Code, you need to config your username and email by following commands:
+$git config --global user.name "UserName"
+$git config --global user.email "yourEmail@gmail.com"
+
+config means "to arrange" and here --globally means that this configuration is applied to all your git reporisitories. If you want to configure only one repository, then you can ommit --globally.
+
+2. Initialize your repository:
+$git init
+It Initialize your directory by creating necessary configuration files. This allows git to start tracking changes in your repository. 
+It creates .get file which keeps the track of version control information.
+It prepares the staging area.
+
+3. $git status
+4. Create any file in your folder and add it to staging area
+$git add .
+
+5. Now send this to GitHub using commit 
+$git commit -m "Message" 
+
+6. PUSH:
+copy repo URL
+$git clone URL
+clone means to copy the repo from the remote source (GitHub). This includes all the files, commit history and branches allowing you to work on your own local version of the project (on your computer VS).
+
+$touch newfile.txt
+$gedit newfile.txt
+$git add .
+$git commit -m "my new file commit"
+$git status
+
+$git remote -v 
+this command shows the name of the URLS of remote reporisitories, along with the information of push and fetch (pull) URLs.
+
+$git push origin main
